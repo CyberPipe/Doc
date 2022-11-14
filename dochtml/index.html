@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html.lang="uk">
+    <head>
+        <title>DocHtml</title>
+        <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="shortcut icon" href="img/htmldc.png" type="image/png">
+        <link href="prettify.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="dblock">
+        <span><img src="img/html.png" class="img-title" alt="sho"></span>
+        <details>
+            <!--!DOCTYPE html -->
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">!DOCTYPE html</span>&gt;</strong></span>
+            </summary>
+            <p><strong class="marginstyle">&lt;<span class="codestyle">!DOCTYPE</span>&gt;</strong><span class="textstyle">Дає зрозуміти браузеру як правильно обробляти документ</span> </p>
+        </details>
+        <!-- html.lang="en"-->
+        <details>
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">html.lang="en"</span>&gt;</strong></span>
+            </summary>
+            <div><strong class="marginstyle">&lt;<span class="codestyle">html.lang="en"</span>&gt;</strong>
+                <span class="textstyle">Html відкриває контейнер в якому знаходиться вміст сторінки. lang дає браузеру розуміння на якому язику написаний сайт</span>
+                <details>
+                    <summary><span class="codestyle smarginstyle">lang позначиння мови</span></summary>
+                    <div class="textstyle smarginstyle">
+                        <p>Англійська - en</p>
+                        <p>Українська - uk</p>
+                        <p>москальська - ru</p>
+                        <p>Польська - pl</p>
+                    </div>
+                </details>
+            </div>
+        </details>
+        <!-- head -->
+        <details class="space1">
+            <summary class="space_color2">
+                <span class="br-in"><strong>&lt;<span class="codestyle">head</span>&gt;</strong></span>
+            </summary>
+            <p><strong class="marginstyle">&lt;<span class="codestyle">head</span>&gt;</strong><span class="textstyle">Зберігає в собі заголовок і метадані сторінки</span> </p>
+        </details>
+        <!-- title -->
+        <details class="space2">
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">title</span>&gt;</strong><span class="textstyle">Doc Html</span><strong>&lt;<span class="codestyle">/title</span>&gt;</strong></span>
+            </summary>
+            <strong class="marginstyle">&lt;<span class="codestyle">title</span>&gt;</strong>
+            <span class="textstyle">Зберігає і виводить заголовок вкладки</span>
+        </details>
+        <!-- meta -->
+        <details class="space2">
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">meta <span class="blu">http-euiv</span><span class="white">=</span><span class="orange">"Content-type"</span><span calss="blu">content</span><span class="white">=</span><span class="orange">"text/html;charset=UTF-8"</span></span>&gt;</strong></span>
+            </summary>
+            <strong class="marginstyle">&lt;<span class="codestyle">meta</span>&gt;</strong><span class="textstyle">Зберігає короткий опис сторінки, ключові слова і інші дані, для браузера и пошукових сиситем</span>
+            <details>
+                <summary><b><p class="blu marginstyle">http-equiv</p></b></summary>
+            <p class="textstyle block marginstyle">Атрибут який може міняти поведінку сторінки або сервера. Використовується в парі з <b><span class="blu">content</span></b>. У нього э декілька значень.</p>
+        </details>
+        <details>
+            <summary><b><p class="blu marginstyle">default-style</p></b></summary>
+                <span class="textstyle marginstyle block">Кращий стиль таблиці, який використовується на сторінці. В такому випадку в атрибуті content просуються заголовок з елемена &lt;<strong><span class="codestyle">link</span></strong>&gt; який звязаний з таблицею CSS-стилів або заголовок елемента &lt;<b><span class="codestyle">style</span></b>&gt;, який зберігає таблицю CSS-стилів.</span></summary>
+        </details>
+            </details>
+        <!-- link -->
+        <details class="space2">
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">link</span><span class="blu"> rel=<span class="orange">"stylesheet"</span>  href=<span class="orange">"css/style.css"</span></span>&gt;</strong></span>
+            </summary>
+            <div class="textstyle marginstyle">
+                <p>Дозволяє загружати на сторінку стороні дані наприклад css-документ</p>
+                <!-- rel -->
+                <details>
+                    <summary>
+                        <strong><p class="blu">rel</p></strong>
+                    </summary>
+                    <p class="textstyle"> Дає браузеру зрозуміти що робить силка всеридині тега </p>
+                </details>
+                <!-- href -->
+                <details>
+                    <summary>
+                        <strong><span class="blu">href</span></strong>
+                    </summary>
+                    <p class="textstyle">URL-силка на зовніншній файл (наприклад картинка або css-документ</p>
+                </details>
+            </div>
+        </details>
+        <!-- style -->
+        <details class="space2">
+            <summary>
+                <strong class="br-in">&lt;<span class="codestyle">style</span>&gt;</strong>
+                <code class="textstyle wordSpace">
+                p{
+                    color: red;
+                }
+                .text-White{ 
+                    color: white;   
+                }
+                </code>
+                <strong class="br-in">&lt;<span class="codestyle">/style</span>&gt;</strong>
+            </summary>
+            <p class="textstyle text-br">В середині тега <strong>&lt;<span class="codestyle">style</span>&gt;</strong> можна задати параметри для CSS-стилів які приміняться на сторінці. (так краще не робити а прописувати всі стилі в окремому файлі)</p>
+        </details>
+        <!-- /head -->
+        <details class="space1">
+            <summary class="space_color2">
+                <span class="br-in"><strong>&lt;<span class="codestyle">/head</span>&gt;</strong></span>
+            </summary>
+            <p><strong class="marginstyle">&lt;<span class="codestyle">head</span>&gt;</strong><span class="textstyle">Зберігає в собі заголовок і метадані сторінки</span> </p>
+        </details>
+        <!-- body -->
+        <details class="space1">
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">body</span>&gt;</strong></span>
+            </summary>
+            <p class="textstyle marginstyle">Елемент зберігає в собі весь контент сторінки. Теги скріпти картинки і т.д</p>
+        </details>
+        <!-- header -->
+        <b><p class="green space2">&lt;!-- header --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">header</span>&gt;</strong>
+                <p class="textstyle space1 space_color3">Шапка сторінки</p>
+                <strong class="space_color1">&lt;<span class="codestyle">/header</span>&gt;</strong>
+                </div>
+            </summary>
+            <p class="textstyle marginstyle">Використовується для створення шапок</p>
+        </details>
+        <!-- h1 заголовки -->
+        <b><p class="green space2">&lt;!-- h1 --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-in">
+                <strong>&lt;<code class="codestyle">h1</code>&gt;</strong><span class="textstyle">Заголовок</span><strong>&lt;<span class="codestyle">/h1</span>&gt;</strong>
+                </div>
+            </summary>
+            <div class="textstyle marginstyle">
+                <div class="text-br">
+                <p>Заголовкок тексту. Заголовків буває 6 h1...h6, але заголовок h1 може б бути тільки один на сторінці.</p>
+                </div>
+                <div class="text-br">
+                <h1 class="h1"> h1 Заголовок (font-size: 2em;)</h1>
+                <h2 class="h2"> h2 Заголовок (font-size: 1.5em;)</h2>
+                <h3 class="h3"> h3 Заголовок (font-size: 1.17em;)</h3>
+                <h4 class="h4"> h4 Заголовок (font-size: 1em;)</h4>
+                <h5 class="h5"> h5 Заголовок (font-size: .84em;)</h5>
+                <h6 class="h6"> h6 Заголовок (font-size: .64em;)</h6>
+                </div>
+            </div>
+        </details>
+        <!-- p -->
+        <b><p class="green space2">&lt;!-- p --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">p</span>&gt;</strong>
+                <p class="textstyle">Параграф</p>
+                <strong>&lt;<span class="codestyle">/p</span>&gt;</strong>
+                </div>
+            </summary>
+            <p class="textstyle">Перетворює весь текст на параграф</p>
+        </details>
+        <!-- div -->
+        <b><p class="green space2">&lt;!-- div --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">div</span>&gt;</strong><span class="textstyle"></span>
+                <p class="textstyle space1">Блочний</p>
+                <p class="textstyle space1">тег</p>
+                <strong>&lt;<code class="codestyle">/div</code>&gt;</strong>
+                </div>
+            </summary>
+            <div class="textstyle marginstyle">
+                Самий популярний тег. Тег div є блочний, здебільшого його використовують як контейнер
+            </div>
+        </details>
+        <!-- nav -->
+        <b><p class="green space2">&lt;!-- nav --&gt;</p></b>
+        <details class="space2">
+            <summary>
+            <div class="br-bl">
+                <strong>&lt;<span class="codestyle">nav</span>&gt;</strong>
+                <p class="textstyle space1">Навігація по сторінці</p>
+                <strong>&lt;<span class="codestyle">/nav</span>&gt;</strong>
+            </div>
+            </summary>
+            <p class="textstyle marginstyle">Тег <strong>&lt;<span class="codestyle">nav</span>&gt;</strong> використовується для зберігання навігації по сторінці потипу тега <strong>&lt;<span class="codestyle">a</span>&gt;</strong></p>
+        </details>
+        <!-- ul -->
+        <b><p class="green space2">&lt;!-- ul --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <strong class="br-in">&lt;<span class="codestyle">ul</span>&gt;</strong>
+                <!-- li -->
+                <details class="space1">
+            <summary>
+                <span class="br-in"><strong>&lt;<span class="codestyle">li</span>&gt;</strong><span class="textstyle">Список</span><strong>&lt;<span class="codestyle">/li</span>&gt;</strong></span>
+            </summary>
+            <p class="textstyle">Віділяє пункти списку</p>
+        </details>
+        <!-- li -->
+                <strong class="br-in">&lt;<span class="codestyle">/ul</span>&gt;</strong>
+            </summary>
+            <p class="textstyle marginstyle"><strong>&lt;<span class="codestyle">ul</span>&gt;</strong>  маркирований список (тег показує на початок і кінець списка)</p>
+        </details>
+        <!-- ol -->
+        <b><p class="green space2">&lt;!-- ol --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                
+                <strong class="br-in">&lt;<span class="codestyle">ol</span>&gt;</strong>
+                <!-- li -->
+                <details class="space1">
+                    <summary>
+                        <span class="br-in"><strong>&lt;<span class="codestyle">li</span>&gt;</strong><span class="textstyle">Список</span><strong>&lt;<span class="codestyle">/li</span>&gt;</strong></span>
+                    </summary>
+                        <p class="textstyle"><strong>&lt;<span class="codestyle">li</span>&gt;</strong>Віділяє пункти списку</p>
+                </details>
+                <!-- li -->
+                        <strong class="br-in">&lt;<span class="codestyle">/ol</span>&gt;</strong>
+            </summary>
+            <p class="textstyle marginstyle"><strong>&lt;<span class="codestyle">ol</span>&gt;</strong>  маркирований список (тег показує на початок і кінець списка)</p>
+        </details>
+        <!-- br -->
+        <b><p class="green space2">&lt;!--  br --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                
+                <strong class="br-in">&lt;<span class="codestyle">br</span>&gt;</strong>
+            </summary>
+            <p class="textstyle"><strong>&lt;<span class="codestyle">br</span>&gt;</strong>Переносить текст на іншу лінійку</p>
+        </details>
+        <!-- hr-->
+        <p class="green space2">&lt;!-- hr --&gt;</p></b>
+        <details class="space2">
+            <summary><b>
+                <strong class="br-in">&lt;<span class="codestyle">hr</span>&gt;</strong>
+            </summary>
+            <p class="textstyle"><strong>&lt;<span class="codestyle">hr</span>&gt;</strong>Створює горизонтальну лінію для візуального розділення тексту</p>
+        </details>
+        <!-- b -->
+        <b><p class="green space2">&lt;!-- b --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">b</span>&gt;</strong>
+                <b><p class="textstyle space1">Жирний текст</p></b>
+                <strong>&lt;<span class="codestyle">/b</span>&gt;</strong>
+                </div>
+            </summary>
+            <p class="textstyle"> Робить жирний текст. Використовується для виділення ключувих слів - речень.</p>
+        </details>
+        </details>
+        <!-- strong -->
+        <b><p class="green space2">&lt;!-- strong --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">strong</span>&gt;</strong>
+                <b><p class="textstyle space1">Жирний текст</p></b>
+                <strong>&lt;<span class="codestyle">strong</span>&gt;</strong>
+                </div>
+            </summary>
+            <p class="textstyle">Тег <b>&lt;<span class="codestyle">strong</span>&gt;</b> добавляє до обернотого ним слову або фразі дуже високу важливість, і робить текст жирним </p>
+        </details>
+        <!-- a -->
+        <b><p class="green space2">&lt;!-- a --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <strong class="br-in">&lt;<span class="codestyle">a</span><span class="blu"> href<span class="white">=</span><span class="orange">"https://www.google.com.ua/"</span></span>&gt;<span class="textstyle">Текст силка</span>&lt;<span class="codestyle">/a</span>&gt;</strong>
+            </summary>
+            <details>
+                <summary>
+                    <strong><span class="blu">href</span></strong>
+                </summary>
+                <p class="textstyle">Cилка на сайт</p>
+            </details>
+            <p class="textstyle">Перетворює любий обект в силку</p>
+            <a href="https://www.google.com.ua/"><img src="img/Google-PNG-Photos.png" class="img-style" alt="Ой"></a>
+        </details>
+        <!-- img -->
+        <b><p class="green space2">&lt;!-- img --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <strong class="br-in">&lt;<span class="codestyle">img <span class="blu">src</span><span class="white">=</span><span class="orange">"img/logo.png"</span><span class="blu"> alt</span><span class="white">=</span><span class="orange">"Error"</span></span>&gt;</strong>
+            </summary>
+            <p class="textstyle"><strong>&lt;<span class="codestyle">img</span>&gt;</strong>Виводить картинку</p>
+            <img src="img/Фон.png" class="img-style img-back" alt="eror">
+            <!-- src -->
+            <details>
+                <summary>
+                    <strong><span class="blu">src</span></strong>
+                </summary>
+                <p class="textstyle">Щлях до картинки</p>
+            </details>
+            <!-- atl -->
+            <details>
+                <summary>
+                    <strong><span class="blu">alt</span></strong>
+                </summary>
+                <p class="textstyle">Виводить текст замість картинки якщо вона не загрузилася</p>
+            </details>
+        </details>
+        <!-- button-->
+        <b><p class="green space2">&lt;!-- button --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">button <span class="blu">name</span>=<span class="orange">"button"</span></span>&gt;<span class="textstyle">Кнопка</span>&lt;<span class="codestyle">/button</span>&gt;</strong></div>
+            </summary>
+            <p class="textstyle text-br">Створює кнопку</p>
+            <details>
+                <summary class="br-in">
+                    <span class="textstyle">Атрибути до тега<strong>&lt;<span class="codestyle">button</span>&gt;</strong>можна застосувати будь-який уныверсальний атрибут, а також спуцифічні</span>
+                </summary>
+                <p class="textstyle"><span class="blu">autofocus</span>- робить так, щоб при завантаженні сторінки кнопка вже була вибрана та підсвічена, так що її можна натиснути з клавіатури Enter.</p>
+                <p class="textstyle"><span class="blu">disabled</span>робить кнопку неактивною: натиснути на неї не можна, по дефолту відображається сірим кольором.</p>
+                <p class="textstyle"><span class="blu">form</span>— зв'язує кнопку будь-якої форми в документі через ID. Якщо ID не вказано, то з попередньою формою.</p>
+                <p class="textstyle"><span class="blu">formaction</span>— задає URL-адресу, на яку надсилаються дані після натискання на кнопку</p>
+                <details>
+                    <summary class="br-in">
+                        <p class="textstyle"><span class="blu">formenctype</span> — визначає формат файлу, який користувач може надіслати, натиснувши кнопку. У нього є три значення:</p>
+                    </summary>
+                        <p class="textstyle"><span class="blu">application/x-www-form-urlencoded:</span> стандартне значення, замість пробілів ставиться +, а символи, на зразок російських букв, кодуються їх шістнадцятковими значеннями (наприклад, %D0%9F%D0%B5%D1%82%D1%8F замість Петя 🤡);</p>
+                        <p class="textstyle"><span class="blu">multipart/form-data</span>- використовується, щоб надсилати файли, дані при цьому не кодуються;</p>
+                        <p class="textstyle"><span class="blu">text/plain</span>- літери та інші символи не кодуються, замість пробілів з'являється +.</p>
+                </details>
+                <details>
+                    <summary class="br-in">
+                        <p class=textstyle><span class="blu">formmethod</span>Повідомляє браузеру, яким HTTP-методом потрібно передавати дані на сервер. Є два методи:</p>
+                    </summary>
+                    <p class="textstyle"><span class="blu">post</span>- Упаковує дані форми в тіло повідомлення і передає їх на сервер, обсяг даних залежить від налаштувань сервера;</p>
+                    <p class="textstyle"><span class="blu">get</span>— додає дані з форми прямо в URL-адресу після знака «?», наприклад, тут пари «ім'я=значення» поділяються символом «&», а обсяг даних не може перевищувати 4 Кб. Якщо додати цей атрибут до кнопки, він перевизначить атрибут у всієї форми.https://site.ru/doc/?name=Ivan&age=27method</p>
+                </details>
+                <p class="textstyle"><span class="blu">formnovalidate</span>- Булевий атрибут, працює як novalidateдля тега <form>.</p>
+                <details>
+                    <summary class="br-in">
+                        <p class="textstyle"><span class="blu">formtarget</span>- Показує дані, які ввів користувач. Де браузер відкриє результат, залежить від ключового слова:</p>
+                    </summary>
+                    <p class="textstyle"><span class="blu">_self</span>: показує дані у поточному вікні. Це значення використовується за умовчанням.</p>
+                    <p class="textstyle"><span class="blu">_blank</span>: показує дані у новому вікні браузера - його використовують найчастіше.</p>
+                    <p class="textstyle"><span class="blu">_parent</span>: показує дані всередині батьківського елемента кадру, а якщо такого немає, завантажує в поточному вікні.</p>
+                    <p class="textstyle"><span class="blu">_top</span>: скасовує всі батьківські кадри та завантажує сторінку у повному вікні браузера. Якщо батьківських кадрів немає, то показує дані у поточному вікні.</p>
+                </details>
+                <p class="textstyle"><span class="blu">name</span>- Унікальне ім'я кнопки. Передається разом із даними, які надсилає користувач.</p>
+                <details>
+                    <summary class="br-in">
+                        <p class="textstyle"><span class="blu">type</span>- Задає дію кнопки при натисканні:</p>
+                    </summary>
+                    <p class="textstyle"><span class="blu">submit</span>: надсилає дані на сервер. Це також значення за промовчанням.</p>
+                    <p class="textstyle"><span class="blu">reset</span>: видаляє введені дані з форми.</p>
+                    <p class="textstyle"><span class="blu">button</span>: просто кнопка Дію для неї можна задати через скрипти.</p>
+                </details>
+                <p class="textstyle"><span class="blu">value</span>— задає вихідне значення кнопки, яке надсилається на сервер разом із даними користувача.</p>
+            </details>
+        </details>
+        <!-- form -->
+        <b><p class="green space2">&lt;!-- form --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                
+                <div class="br-bl">
+                <strong class="br-in">&lt;<span class="codestyle">form</span>&gt;</strong>
+                <!-- label -->
+                <details>
+                    <summary><strong class="br-in">&lt;<span class="codestyle">label</span> <span class="blu">for</span><span class="white">=</span><span class="orange">"nameid"</span>&gt;<span class="textstyle">Опис</span><strong>&lt;<span class="codestyle">/label</span>&gt;</strong></strong></summary>
+                    <p class="textstyle text-br"><strong>&lt;<span class="codestyle">label</span></strong>&gt;Використовується для створення підпису елемента</p>
+                </details>
+                <!-- label -->
+                <!-- input -->
+                <details>
+                    <summary>
+                        <strong class="br-in">&lt;<span class="codestyle">input</span> <span class="blu">type</span>=<span class="orange">"text"</span> <span class="blu">name</span>=<span class="orange">"name"</span> <span class="blu">"id"</span>=<span class="orange">id</span>&gt;</strong>
+                        
+                    </summary>
+                    <p class="textstyle text-br">Тег <strong>&lt;<span class="codestyle">input</span>&gt;</strong> дозволяє створювати інтерактивні елементи на сайті - поле для введення тексту, кнопка, повзунок, перемикач та інші</p>
+                    <!-- type -->
+                        <details>
+                            <summary>
+                                <strong><span class="blu">type</span></strong>
+                            </summary>
+                            <b><p class="green">&lt;!-- Типи для введення різних даних форматів--&gt;</p></b>
+                            <p class="textstyle">Тип елемента <strong>&lt;<span class="codestyle">input</span>&gt;</strong></p>
+                            <div class="text-br">
+                            <p class="textstyle"><span class="blu">text</span> - поле для ввода текста (в один рядок)</p>
+                            <p class="textstyle"><span class="blu">email</span> - поле для ввода емейла. Браузер провірить чи є в ньому знак @ і домен</p>
+                            <p class="textstyle"><span class="blu">search</span> - поле для пошуку.</p>
+                            <p class="textstyle"><span class="blu">tel</span> - поле для ввода телефона.</p>
+                            <p class="textstyle"><span class="blu">url</span> поле для ввода URL-адруса.</p>
+                            <p class="textstyle"><span class="blu">password</span> - ввод пароля. Символи будуть замінятися на ***. Можна задати мінімальну і максимальну кількість символів.</p>
+                            <p class="textstyle"><span class="blu">number</span>- ввод числа</p>
+                            </div>
+                            <b><p class="green">&lt;!-- Типи для кнопок --&gt;</p></b>
+                            <div class="text-br">
+                            <p class="textstyle"><span class="blu">submit</span> - просто кнопка для відправки форми</p>
+                            <p class="textstyle"><span class="blu">button</span> - звичайна кнопка</p>
+                            <p class="textstyle"><span class="blu">image</span>- кнопка &laquo;Відправки&raquo; в виді картинки. Щоб задати адрес картинки використовуйте атрибут src, а для альтернативного текста - атрибут alt. Щоб скоректувати розмір використовуйте height і width.</p>
+                            <p class="textstyle"><span class="blu">reset</span> - кнопка яка скидує все що користувач ввів в поля форми раніше.</p>
+                            </div>
+                            <b><p class="green">&lt;!-- Типы для ввода дат--&gt;</p></b>
+                            <div class="text-br">
+                            <p class="textstyle"><span class="blu">date</span> - ввод дати без часуж: рік, місяць і дата.</p>
+                            <p class="textstyle"><span class="blu">detetime-local</span> - ввод дати і часу в поточному часовому поясі, коли зони UTC не вказуються </p>
+                            <p class="textstyle"><span class="blu">month</span> - ввод місяця і року, без указання часового пояса.</p>
+                            <p class="textstyle"><span class="blu">week</span> - ввод номера тижня</p>
+                            <p class="textstyle"><span class="blu">time</span> - ввод часу без вказування часового пояса.</p>
+                            </div>
+                            <b><p class="green">&lt;!-- Едементи форм --&gt;</p></b>
+                            <div class="text-br">
+                            <p class="textstyle"><span class="blu">chackbox</span> - галочки або чекбокс, з декільками варіантами на вибір</p>
+                            <p class="textstyle"><span class="blu">radio</span> - кругла кнопка - переключатель дя вибору одного з декількох варіантів.</p>
+                            <p class="textstyle"><span class="blu">range</span> - повзунок для вибора чисел із заданного діапазону.</p>
+                            <p class="textstyle"><span class="blu">color</span> - віджет для вибора коляру. Інколи його називають колопикур (colorpicker)</p>
+                            <p class="textstyle"><span class="blu">file</span> - Вибір файла для відправки</p> 
+                            </div>
+                        </details>
+                        <!-- type -->
+                        <details>
+                            <summary><strong><span class="blu">Інші атрибути</span></strong></summary>
+                        </details>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+                        <p class="textstyle"><span class="blu"></span></p>
+
+                </details>
+                <!-- input -->
+                <strong class="br-in">&lt;<span class="codestyle">/form</span>&gt;</strong>
+            </div>
+            </summary>
+            <p class="textstyle">Тег<strong>&lt;<span class="codestyle">form</span>&gt;</strong> добавляє на сторінку форму, яку користувач може заповнити. Наприклад вести своє імя фамілію або почту. Дані форми відправляються на серевер.</p>
+        </details>
+        <!-- script -->
+        <b><p class="green space2">&lt;!-- script --&gt;</p></b>
+        <details class="space2">
+            <summary>
+                <div class="br-bl">
+                <strong>&lt;<span class="codestyle">script</span>&gt;</strong>
+                <b><p class="textstyle space1"><span class="blu">window</span>.<span class="yellow">alert(</span><span class="orange">"Добавити вот такий JavaScript-код"</span><span class="yellow">)</span></p></b>
+                <strong>&lt;<span class="codestyle">/script</span>&gt;</strong>
+                </div>
+            </summary>
+        </details>
+        </div>
+        </body>
+    </html.lang>

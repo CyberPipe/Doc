@@ -1,0 +1,162 @@
+*{
+	padding: 0;
+	margin: 0;
+	border: 0;
+}
+*,*:before,*:after{
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+:focus,:active{outline: none;}
+a:focus,a:active{outline: none;}
+nav,footer,header,aside{display: block;}
+html,body{
+	height: 100%;
+	width: 100%;
+	font-size: 100%;
+	line-height: 1;
+	font-size: 14px;
+	-ms-text-size-adjust: 100%;
+	-moz-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+input,button,textarea{font-family:inherit;}
+input::-ms-clear{display: none;}
+button{cursor: pointer;}
+button::-moz-focus-inner {padding:0;border:0;}
+a, a:visited{text-decoration: none;}
+a:hover{text-decoration: none;}
+ul li{list-style: none;}
+img{vertical-align: top;}
+h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
+/*--------------------*/
+*{
+	background-color: #000000;
+	font-size: 17px;
+	font-family: "Courier New", Courier, monospace;
+}
+details summary{
+	list-style: none;
+}
+.textstyle{
+	color: rgb(206, 206, 206);
+}
+.codestyle{
+	color: rgb(93, 148, 219);
+}
+strong{
+	color: grey;
+}
+.marginstyle{
+	margin-left: 50px;
+}
+.h1style{
+	color: Orange;
+	text-align: center;
+	font-size: 30px;
+}
+.smarginstyle{
+	color:#94e092;
+	margin-left: 60px
+}
+.orange{
+	color: #b97652;
+}
+.white{
+	color: grey;
+}
+.blu{
+	font-size: 16px;
+	color:rgb(157, 199, 238);
+}
+.h1{
+	font-size: 2em;
+}
+.h2{
+	font-size: 1.5em;
+}
+.h3{
+	font-size: 1.17em;
+}
+.h4{
+	font-size: 1em;
+}
+.h5{
+	font-size: .84em;
+}
+.h6{
+	font-size: .64em;
+}
+.space1{
+	margin-left: 4ch;
+}
+.space2{
+	margin-left: 8ch;
+}
+.space3{
+	margin-left: 13ch;
+}
+.space4{
+	margin-left: 17ch;
+}
+.green{
+	color:green;
+}
+.img-style{
+	width: 50px;
+	height: 50px;
+}
+.img-title{
+	width: 50px;
+	height: 50px;
+	margin-left: 50%;
+	margin-right: 50%;
+}
+.dblock{
+	width: 50%;
+}
+.text-br{
+    border: 1px solid rgb(87, 87, 87);
+    display: block;
+	border-radius: 5px;
+}
+.br-in{
+	outline: 2px solid #575757;
+	outline: 2px transparent;
+	display: inline;
+}
+.br-in:hover{
+	outline: 2px solid #575757;
+	cursor: pointer;
+}
+.br-bl{
+	outline: 2px solid #575757;
+	outline: 2px transparent;
+	display: inline-block;
+}
+.br-bl:hover{
+	outline: 2px solid #575757;
+	cursor: pointer;
+}
+.block-style{
+	position: absolute; 
+	right: 0; 
+	top: 0; 
+	width: 30%;
+	height: 100%;
+}
+.yelow{
+	color: rgb(184, 184, 43);
+}
+.wordSpace{
+	white-space: pre-line;
+}
+details[open] {
+	animation: slide .3s ease-in-out;
+}
+
+@keyframes slide {
+	0%    { opacity: 0; transform:  translate(0, -10px); }
+	100%  { opacity: 1; transform:  translate(0, 0); }
+}
