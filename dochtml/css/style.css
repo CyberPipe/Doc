@@ -39,6 +39,9 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 details summary{
 	list-style: none;
 }
+.center{
+	margin: auto;
+}
 .textstyle{
 	color: rgb(206, 206, 206);
 }
@@ -46,7 +49,7 @@ details summary{
 	color: rgb(93, 148, 219);
 }
 strong{
-	color: grey;
+	color: #b4b4b4;
 }
 .marginstyle{
 	margin-left: 50px;
@@ -56,7 +59,7 @@ strong{
 	text-align: center;
 	font-size: 30px;
 }
-.smarginstyle{
+.light_green_{
 	color:#94e092;
 	margin-left: 60px
 }
@@ -114,30 +117,8 @@ strong{
 	margin-right: 50%;
 }
 .dblock{
-	width: 50%;
-}
-.text-br{
-    border: 1px solid rgb(87, 87, 87);
-    display: block;
-	border-radius: 5px;
-}
-.br-in{
-	outline: 2px solid #575757;
-	outline: 2px transparent;
-	display: inline;
-}
-.br-in:hover{
-	outline: 2px solid #575757;
-	cursor: pointer;
-}
-.br-bl{
-	outline: 2px solid #575757;
-	outline: 2px transparent;
-	display: inline-block;
-}
-.br-bl:hover{
-	outline: 2px solid #575757;
-	cursor: pointer;
+	width: 95%;
+	margin: auto;
 }
 .block-style{
 	position: absolute; 
@@ -146,17 +127,55 @@ strong{
 	width: 30%;
 	height: 100%;
 }
+.br-ts{
+	border: 1px solid #000;
+	cursor: pointer;
+}
+.br-ts:hover{
+	border:rgb(206, 206, 206);
+}
 .yelow{
-	color: rgb(184, 184, 43);
+	color: rgb(214, 214, 55);
 }
 .wordSpace{
 	white-space: pre-line;
 }
 details[open] {
-	animation: slide .3s ease-in-out;
+	animation: slide .2s ease-in-out;
 }
-
+.button_swap{
+	color: rgb(255, 208, 0);
+	background-color: #313131;
+	padding: 3px;
+	border: 1px solid gray;
+	margin-bottom: 1px;
+}
+.button_swap:hover{
+	background-color: #000000;
+}
+.line_button{
+	display: flex;
+	margin-left: 50px
+}
+.pxgreen{
+	color:#94e092;
+}
+.outline_details{
+	outline: 2px solid gray;
+	outline: 2px transparent;
+	border-radius: 2px;
+}
+.outline_details:hover{
+	outline: 2px solid gray;
+	cursor: pointer;
+	display: inline-block;
+	position: relative;
+}
+summary{
+	display:inline-block;
+}
 @keyframes slide {
 	0%    { opacity: 0; transform:  translate(0, -10px); }
 	100%  { opacity: 1; transform:  translate(0, 0); }
 }
+

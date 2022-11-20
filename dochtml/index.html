@@ -8,21 +8,23 @@
         <link href="prettify.css" rel="stylesheet">
     </head>
     <body>
+        <header>
+            <span class="line_button"><form action="index.html"><button class="button_swap">index.html</button></form><form action="doccss.html"><button class="button_swap">style.css</button></form></span>
+        </header>
         <div class="dblock">
-        <span><img src="img/html.png" class="img-title" alt="sho"></span>
+        <!--!DOCTYPE html -->
         <details>
-            <!--!DOCTYPE html -->
-            <summary>
-                <span class="br-in"><strong>&lt;<span class="codestyle">!DOCTYPE html</span>&gt;</strong></span>
+            <summary class="outline_details">
+                <span><strong>&lt;<span class="codestyle bg">!DOCTYPE html</span>&gt;</strong></span>
             </summary>
-            <p><strong class="marginstyle">&lt;<span class="codestyle">!DOCTYPE</span>&gt;</strong><span class="textstyle">Дає зрозуміти браузеру як правильно обробляти документ</span> </p>
+            <p><strong class="marginstyle">&lt;<span class="codestyle">!DOCTYPE</span>&gt;</strong><span class="textstyle">Дає зрозуміти браузеру як правильно обробляти документ</span></p>
         </details>
         <!-- html.lang="en"-->
         <details>
-            <summary>
-                <span class="br-in"><strong>&lt;<span class="codestyle">html.lang="en"</span>&gt;</strong></span>
+            <summary class="outline_details">
+                <span><strong>&lt;<span class="codestyle bg">html.lang="en"</span>&gt;</strong></span>
             </summary>
-            <div><strong class="marginstyle">&lt;<span class="codestyle">html.lang="en"</span>&gt;</strong>
+                <strong class="marginstyle">&lt;<span class="codestyle">html.lang="en"</span>&gt;</strong>
                 <span class="textstyle">Html відкриває контейнер в якому знаходиться вміст сторінки. lang дає браузеру розуміння на якому язику написаний сайт</span>
                 <details>
                     <summary><span class="codestyle smarginstyle">lang позначиння мови</span></summary>
@@ -33,29 +35,27 @@
                         <p>Польська - pl</p>
                     </div>
                 </details>
-            </div>
         </details>
         <!-- head -->
         <details class="space1">
-            <summary class="space_color2">
-                <span class="br-in"><strong>&lt;<span class="codestyle">head</span>&gt;</strong></span>
+            <summary class="outline_details">
+                <strong>&lt;<span class="codestyle bg">head</span>&gt;</strong>
             </summary>
             <p><strong class="marginstyle">&lt;<span class="codestyle">head</span>&gt;</strong><span class="textstyle">Зберігає в собі заголовок і метадані сторінки</span> </p>
         </details>
         <!-- title -->
         <details class="space2">
-            <summary>
-                <span class="br-in"><strong>&lt;<span class="codestyle">title</span>&gt;</strong><span class="textstyle">Doc Html</span><strong>&lt;<span class="codestyle">/title</span>&gt;</strong></span>
+            <summary class="outline_details">
+                <span><strong>&lt;<span class="codestyle bg">title</span>&gt;</strong><span class="textstyle">Doc Html</span><strong>&lt;<span class="codestyle">/title</span>&gt;</strong></span>
             </summary>
-            <strong class="marginstyle">&lt;<span class="codestyle">title</span>&gt;</strong>
-            <span class="textstyle">Зберігає і виводить заголовок вкладки</span>
+            <p class="textstyle"><strong class="marginstyle">&lt;<span class="codestyle">title</span>&gt;</strong>Зберігає і виводить заголовок вкладки</p>
         </details>
         <!-- meta -->
         <details class="space2">
-            <summary>
-                <span class="br-in"><strong>&lt;<span class="codestyle">meta <span class="blu">http-euiv</span><span class="white">=</span><span class="orange">"Content-type"</span><span calss="blu">content</span><span class="white">=</span><span class="orange">"text/html;charset=UTF-8"</span></span>&gt;</strong></span>
+            <summary class="outline_details">
+                <span><strong>&lt;<span class="codestyle">meta <span class="blu">http-euiv</span><span class="white">=</span><span class="orange">"Content-type"</span><span calss="blu">content</span><span class="white">=</span><span class="orange">"text/html;charset=UTF-8"</span></span>&gt;</strong></span>
             </summary>
-            <strong class="marginstyle">&lt;<span class="codestyle">meta</span>&gt;</strong><span class="textstyle">Зберігає короткий опис сторінки, ключові слова і інші дані, для браузера и пошукових сиситем</span>
+            <p><strong class="marginstyle">&lt;<span class="codestyle">meta</span>&gt;</strong><span class="textstyle">Зберігає короткий опис сторінки, ключові слова і інші дані, для браузера и пошукових сиситем</span></p>
             <details>
                 <summary><b><p class="blu marginstyle">http-equiv</p></b></summary>
             <p class="textstyle block marginstyle">Атрибут який може міняти поведінку сторінки або сервера. Використовується в парі з <b><span class="blu">content</span></b>. У нього э декілька значень.</p>
@@ -67,8 +67,8 @@
             </details>
         <!-- link -->
         <details class="space2">
-            <summary>
-                <span class="br-in"><strong>&lt;<span class="codestyle">link</span><span class="blu"> rel=<span class="orange">"stylesheet"</span>  href=<span class="orange">"css/style.css"</span></span>&gt;</strong></span>
+            <summary class="outline_details">
+                <span><strong>&lt;<span class="codestyle">link</span><span class="blu"> rel=<span class="orange">"stylesheet"</span>  href=<span class="orange">"css/style.css"</span></span>&gt;</strong></span>
             </summary>
             <div class="textstyle marginstyle">
                 <p>Дозволяє загружати на сторінку стороні дані наприклад css-документ</p>
@@ -90,7 +90,7 @@
         </details>
         <!-- style -->
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <strong class="br-in">&lt;<span class="codestyle">style</span>&gt;</strong>
                 <code class="textstyle wordSpace">
                 p{
@@ -104,16 +104,16 @@
             </summary>
             <p class="textstyle text-br">В середині тега <strong>&lt;<span class="codestyle">style</span>&gt;</strong> можна задати параметри для CSS-стилів які приміняться на сторінці. (так краще не робити а прописувати всі стилі в окремому файлі)</p>
         </details>
-        <!-- /head -->
+        <!-- head -->
         <details class="space1">
-            <summary class="space_color2">
+            <summary class="outline_details">
                 <span class="br-in"><strong>&lt;<span class="codestyle">/head</span>&gt;</strong></span>
             </summary>
             <p><strong class="marginstyle">&lt;<span class="codestyle">head</span>&gt;</strong><span class="textstyle">Зберігає в собі заголовок і метадані сторінки</span> </p>
         </details>
         <!-- body -->
         <details class="space1">
-            <summary>
+            <summary class="outline_details">
                 <span class="br-in"><strong>&lt;<span class="codestyle">body</span>&gt;</strong></span>
             </summary>
             <p class="textstyle marginstyle">Елемент зберігає в собі весь контент сторінки. Теги скріпти картинки і т.д</p>
@@ -121,7 +121,7 @@
         <!-- header -->
         <b><p class="green space2">&lt;!-- header --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
                 <strong>&lt;<span class="codestyle">header</span>&gt;</strong>
                 <p class="textstyle space1 space_color3">Шапка сторінки</p>
@@ -133,7 +133,7 @@
         <!-- h1 заголовки -->
         <b><p class="green space2">&lt;!-- h1 --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-in">
                 <strong>&lt;<code class="codestyle">h1</code>&gt;</strong><span class="textstyle">Заголовок</span><strong>&lt;<span class="codestyle">/h1</span>&gt;</strong>
                 </div>
@@ -155,7 +155,7 @@
         <!-- p -->
         <b><p class="green space2">&lt;!-- p --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
                 <strong>&lt;<span class="codestyle">p</span>&gt;</strong>
                 <p class="textstyle">Параграф</p>
@@ -167,7 +167,7 @@
         <!-- div -->
         <b><p class="green space2">&lt;!-- div --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
                 <strong>&lt;<span class="codestyle">div</span>&gt;</strong><span class="textstyle"></span>
                 <p class="textstyle space1">Блочний</p>
@@ -182,7 +182,7 @@
         <!-- nav -->
         <b><p class="green space2">&lt;!-- nav --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
             <div class="br-bl">
                 <strong>&lt;<span class="codestyle">nav</span>&gt;</strong>
                 <p class="textstyle space1">Навігація по сторінці</p>
@@ -194,11 +194,11 @@
         <!-- ul -->
         <b><p class="green space2">&lt;!-- ul --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <strong class="br-in">&lt;<span class="codestyle">ul</span>&gt;</strong>
                 <!-- li -->
                 <details class="space1">
-            <summary>
+            <summary class="outline_details">
                 <span class="br-in"><strong>&lt;<span class="codestyle">li</span>&gt;</strong><span class="textstyle">Список</span><strong>&lt;<span class="codestyle">/li</span>&gt;</strong></span>
             </summary>
             <p class="textstyle">Віділяє пункти списку</p>
@@ -211,13 +211,12 @@
         <!-- ol -->
         <b><p class="green space2">&lt;!-- ol --&gt;</p></b>
         <details class="space2">
-            <summary>
-                
-                <strong class="br-in">&lt;<span class="codestyle">ol</span>&gt;</strong>
+            <summary class="outline_details">
+                <strong>&lt;<span class="codestyle">ol</span>&gt;</strong>
                 <!-- li -->
                 <details class="space1">
-                    <summary>
-                        <span class="br-in"><strong>&lt;<span class="codestyle">li</span>&gt;</strong><span class="textstyle">Список</span><strong>&lt;<span class="codestyle">/li</span>&gt;</strong></span>
+                    <summary class="outline_details">
+                        <span><strong>&lt;<span class="codestyle">li</span>&gt;</strong><span class="textstyle">Список</span><strong>&lt;<span class="codestyle">/li</span>&gt;</strong></span>
                     </summary>
                         <p class="textstyle"><strong>&lt;<span class="codestyle">li</span>&gt;</strong>Віділяє пункти списку</p>
                 </details>
@@ -229,16 +228,15 @@
         <!-- br -->
         <b><p class="green space2">&lt;!--  br --&gt;</p></b>
         <details class="space2">
-            <summary>
-                
-                <strong class="br-in">&lt;<span class="codestyle">br</span>&gt;</strong>
+            <summary class="outline_details">
+                <strong class="br-in">&lt;<span class="codestyle br-in">br</span>&gt;</strong>
             </summary>
             <p class="textstyle"><strong>&lt;<span class="codestyle">br</span>&gt;</strong>Переносить текст на іншу лінійку</p>
         </details>
         <!-- hr-->
-        <p class="green space2">&lt;!-- hr --&gt;</p></b>
+        <b><p class="green space2">&lt;!-- hr --&gt;</p></b>
         <details class="space2">
-            <summary><b>
+            <summary class="outline_details">
                 <strong class="br-in">&lt;<span class="codestyle">hr</span>&gt;</strong>
             </summary>
             <p class="textstyle"><strong>&lt;<span class="codestyle">hr</span>&gt;</strong>Створює горизонтальну лінію для візуального розділення тексту</p>
@@ -246,7 +244,7 @@
         <!-- b -->
         <b><p class="green space2">&lt;!-- b --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
                 <strong>&lt;<span class="codestyle">b</span>&gt;</strong>
                 <b><p class="textstyle space1">Жирний текст</p></b>
@@ -259,7 +257,7 @@
         <!-- strong -->
         <b><p class="green space2">&lt;!-- strong --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
                 <strong>&lt;<span class="codestyle">strong</span>&gt;</strong>
                 <b><p class="textstyle space1">Жирний текст</p></b>
@@ -271,8 +269,8 @@
         <!-- a -->
         <b><p class="green space2">&lt;!-- a --&gt;</p></b>
         <details class="space2">
-            <summary>
-                <strong class="br-in">&lt;<span class="codestyle">a</span><span class="blu"> href<span class="white">=</span><span class="orange">"https://www.google.com.ua/"</span></span>&gt;<span class="textstyle">Текст силка</span>&lt;<span class="codestyle">/a</span>&gt;</strong>
+            <summary class="outline_details">
+                <strong>&lt;<span class="codestyle">a</span><span class="blu"> href<span class="white">=</span><span class="orange">"https://www.google.com.ua/"</span></span>&gt;</strong><span class="textstyle">Текст силка</span><strong>&lt;<span class="codestyle">/a</span>&gt;</strong>
             </summary>
             <details>
                 <summary>
@@ -286,11 +284,11 @@
         <!-- img -->
         <b><p class="green space2">&lt;!-- img --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <strong class="br-in">&lt;<span class="codestyle">img <span class="blu">src</span><span class="white">=</span><span class="orange">"img/logo.png"</span><span class="blu"> alt</span><span class="white">=</span><span class="orange">"Error"</span></span>&gt;</strong>
             </summary>
             <p class="textstyle"><strong>&lt;<span class="codestyle">img</span>&gt;</strong>Виводить картинку</p>
-            <img src="img/Фон.png" class="img-style img-back" alt="eror">
+            <img src="img/html.png" class="img-style img-back" alt="eror">
             <!-- src -->
             <details>
                 <summary>
@@ -309,9 +307,10 @@
         <!-- button-->
         <b><p class="green space2">&lt;!-- button --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
-                <strong>&lt;<span class="codestyle">button <span class="blu">name</span>=<span class="orange">"button"</span></span>&gt;<span class="textstyle">Кнопка</span>&lt;<span class="codestyle">/button</span>&gt;</strong></div>
+                <strong>&lt;<span class="codestyle">button <span class="blu">name</span>=<span class="orange">"button"</span></span>&gt;</strong><span class="textstyle">Кнопка</span><strong>&lt;<span class="codestyle">/button</span>&gt;</strong>
+                </div>
             </summary>
             <p class="textstyle text-br">Створює кнопку</p>
             <details>
@@ -362,21 +361,21 @@
         <!-- form -->
         <b><p class="green space2">&lt;!-- form --&gt;</p></b>
         <details class="space2">
-            <summary>
-                
-                <div class="br-bl">
-                <strong class="br-in">&lt;<span class="codestyle">form</span>&gt;</strong>
+            <summary class="outline_details">
+                <div>
+                <strong>&lt;<span class="codestyle">form</span>&gt;</strong>
                 <!-- label -->
-                <details>
-                    <summary><strong class="br-in">&lt;<span class="codestyle">label</span> <span class="blu">for</span><span class="white">=</span><span class="orange">"nameid"</span>&gt;<span class="textstyle">Опис</span><strong>&lt;<span class="codestyle">/label</span>&gt;</strong></strong></summary>
+                <details class="space1">
+                    <summary class="outline_details">
+                        <strong>&lt;<span class="codestyle">label</span> <span class="blu">for</span><span class="white">=</span><span class="orange">"nameid"</span>&gt;</strong><span class="textstyle">Опис</span><strong>&lt;<span class="codestyle">/label</span>&gt;</strong>
+                    </summary>
                     <p class="textstyle text-br"><strong>&lt;<span class="codestyle">label</span></strong>&gt;Використовується для створення підпису елемента</p>
                 </details>
                 <!-- label -->
                 <!-- input -->
-                <details>
-                    <summary>
+                <details class="space1">
+                    <summary class="outline_details">
                         <strong class="br-in">&lt;<span class="codestyle">input</span> <span class="blu">type</span>=<span class="orange">"text"</span> <span class="blu">name</span>=<span class="orange">"name"</span> <span class="blu">"id"</span>=<span class="orange">id</span>&gt;</strong>
-                        
                     </summary>
                     <p class="textstyle text-br">Тег <strong>&lt;<span class="codestyle">input</span>&gt;</strong> дозволяє створювати інтерактивні елементи на сайті - поле для введення тексту, кнопка, повзунок, перемикач та інші</p>
                     <!-- type -->
@@ -432,7 +431,6 @@
                         <p class="textstyle"><span class="blu"></span></p>
                         <p class="textstyle"><span class="blu"></span></p>
                         <p class="textstyle"><span class="blu"></span></p>
-
                 </details>
                 <!-- input -->
                 <strong class="br-in">&lt;<span class="codestyle">/form</span>&gt;</strong>
@@ -443,14 +441,46 @@
         <!-- script -->
         <b><p class="green space2">&lt;!-- script --&gt;</p></b>
         <details class="space2">
-            <summary>
+            <summary class="outline_details">
                 <div class="br-bl">
                 <strong>&lt;<span class="codestyle">script</span>&gt;</strong>
                 <b><p class="textstyle space1"><span class="blu">window</span>.<span class="yellow">alert(</span><span class="orange">"Добавити вот такий JavaScript-код"</span><span class="yellow">)</span></p></b>
                 <strong>&lt;<span class="codestyle">/script</span>&gt;</strong>
                 </div>
             </summary>
+            <p class="textstyle text-br">Скрипт — це елемент коду, який дозволяє виконувати дії, включати анімацію та створювати інші ефекти на сторінці. Щоб додати скрипти, використовуйте тег &lt;script&gt; Як і CSS-стилі, скрипти можна прописати всередині коду сторінки або додати як зовнішній документ за посиланням. Тег можна розташувати в будь якому місті</p>
+            
         </details>
-        </div>
+        <!-- video -->
+        <b><p class="green space2">&lt;!-- video --&gt;</p></b>
+        <details class="space2">
+            <summary class="outline_details">
+                <strong class="br-in">&lt;<span class="codestyle">video <span class="blu">controls width</span>=<span class="orange">"500"</span></span>&gt;</strong>
+                <details>
+                    <summary class="space1">
+                        <strong class="outline_details">&lt;<span class="codestyle">source</span> <span class="blu">src</span>=<span class="orange">"Video/Project.mp4"</span> <span class="blu">type</span>=<span class="orange">"video/mp4</span>&gt;</strong>
+                    </summary>
+                    <p class="textstyle">Шлях до відео</p>
+                </details>
+                <strong class="br-bl">&lt;<span class="codestyle">/video</span>&gt;</strong>
+            </summary>
+            <p class="textstyle">Виводить відео</p>
+        </details>
+        <!-- details -->
+        <b><p class="green space2">&lt;!-- details --&gt;</p></b>
+        <details class="space2">
+            <summary class="outline_details">
+                <strong class="bg">&lt;<span class="codestyle">details</span>&gt;</strong>
+                <details class="space1">
+                    <summary class="outline_details">
+                        <code><strong>&lt;<span class="codestyle">summary</span>&gt;</strong></code>
+                        <p class="textstyle space1">Панель</p>
+                        <code><strong>&lt;<span class="codestyle">/summary</span>&gt;</strong></code>
+                    </summary>
+                </details>
+                <strong>&lt;<span class="codestyle">/details</span>&gt;</strong>
+            </summary>
+        </details>
+        </details>
         </body>
     </html.lang>
