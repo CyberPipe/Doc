@@ -118,13 +118,6 @@ strong{
 	width: 30%;
 	height: 100%;
 }
-.br-ts{
-	border: 1px solid #000;
-	cursor: pointer;
-}
-.br-ts:hover{
-	border:rgb(206, 206, 206);
-}
 .yelow{
 	color: rgb(214, 214, 55);
 }
@@ -157,7 +150,7 @@ details[open] {
 	border-radius: 2px;
 }
 .outline_details:hover{
-	outline: 2px solid gray;
+	outline: 2px solid #808080;
 	cursor: pointer;
 	display: inline-block;
 	position: relative;
@@ -166,7 +159,7 @@ summary{
 	display:inline-block;
 }
 .border_text{
-	outline: 2px solid rgb(108, 112, 122);
+	outline: 1px solid #586f9b;
 	display: inline;
 	border-radius: 4px;
 }
@@ -181,8 +174,14 @@ summary{
 .text_back{
 	padding: 0.025em 0.35em;
     border-radius: 2em;
-    background-color: rgb(109, 109, 109); 
+    background-color: #6d6d6d; 
 	position: relative;
+}
+.border_block{
+	outline: 1px solid #586f9b;
+	padding-left: 10px;
+	border-radius: 4px;
+	display: block;
 }
 @keyframes slide {
 	0%    { opacity: 0; transform:  translate(0, -10px); }
