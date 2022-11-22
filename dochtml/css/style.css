@@ -35,6 +35,7 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: #000000;
 	font-size: 17px;
 	font-family: "Courier New", Courier, monospace;
+	
 }
 details summary{
 	list-style: none;
@@ -51,17 +52,13 @@ details summary{
 strong{
 	color: #b4b4b4;
 }
-.marginstyle{
-	margin-left: 50px;
-}
 .h1style{
 	color: Orange;
 	text-align: center;
 	font-size: 30px;
 }
-.light_green_{
+.light_green{
 	color:#94e092;
-	margin-left: 60px
 }
 .orange{
 	color: #b97652;
@@ -107,14 +104,8 @@ strong{
 	color:green;
 }
 .img-style{
-	width: 50px;
-	height: 50px;
-}
-.img-title{
-	width: 50px;
-	height: 50px;
-	margin-left: 50%;
-	margin-right: 50%;
+	width: 20px;
+	height: 19px;
 }
 .dblock{
 	width: 95%;
@@ -155,7 +146,7 @@ details[open] {
 }
 .line_button{
 	display: flex;
-	margin-left: 50px
+	margin-left: 50px;
 }
 .pxgreen{
 	color:#94e092;
@@ -173,6 +164,25 @@ details[open] {
 }
 summary{
 	display:inline-block;
+}
+.border_text{
+	outline: 2px solid rgb(108, 112, 122);
+	display: inline;
+	border-radius: 4px;
+}
+.html_logo::after{
+	content: "<>";
+	color: orange;
+}
+.css_logo::after{
+	content: "#";
+	color: rgb(33, 185, 231);	
+}
+.text_back{
+	padding: 0.025em 0.35em;
+    border-radius: 2em;
+    background-color: rgb(109, 109, 109); 
+	position: relative;
 }
 @keyframes slide {
 	0%    { opacity: 0; transform:  translate(0, -10px); }
