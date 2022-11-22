@@ -178,7 +178,7 @@ summary{
 	position: relative;
 }
 .border_block{
-	outline: 1px solid rgb(93, 119, 168);
+	outline: 2px solid rgb(93, 119, 168);
 	padding-left: 10px;
 	border-radius: 4px;
 	display: block;
