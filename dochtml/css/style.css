@@ -159,7 +159,7 @@ summary{
 	display:inline-block;
 }
 .border_text{
-	outline: 1px solid #586f9b;
+	outline: 1px solid rgb(88, 111, 155);
 	display: inline;
 	border-radius: 4px;
 }
@@ -174,17 +174,15 @@ summary{
 .text_back{
 	padding: 0.025em 0.35em;
     border-radius: 2em;
-    background-color: #6d6d6d; 
+    background-color: rgb(109, 109, 109); 
 	position: relative;
 }
 .border_block{
-	outline: 1px solid #586f9b;
+	outline: 2px solid rgb(93, 119, 168);
 	padding-left: 10px;
 	border-radius: 4px;
 	display: block;
-}
-.block{
-	
+	margin-right: 10px;
 }
 @keyframes slide {
 	0%    { opacity: 0; transform:  translate(0, -10px); }
