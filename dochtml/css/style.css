@@ -35,7 +35,6 @@ h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 	background-color: #000000;
 	font-size: 17px;
 	font-family: "Courier New", Courier, monospace;
-	
 }
 details summary{
 	list-style: none;
@@ -176,6 +175,7 @@ summary{
     border-radius: 2em;
     background-color: rgb(109, 109, 109); 
 	position: relative;
+	top: 1px;
 }
 .border_block{
 	outline: 2px solid rgb(93, 119, 168);
@@ -184,8 +184,14 @@ summary{
 	display: block;
 	margin-right: 10px;
 }
+.angles_img{
+	width: 970;
+	height: 538;
+}
 @keyframes slide {
 	0%    { opacity: 0; transform:  translate(0, -10px); }
 	100%  { opacity: 1; transform:  translate(0, 0); }
 }
+
+
 
