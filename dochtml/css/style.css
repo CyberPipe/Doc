@@ -173,9 +173,7 @@ summary{
 .text_back{
 	padding: 0.025em 0.35em;
     border-radius: 2em;
-    background-color: rgb(109, 109, 109); 
-	position: relative;
-	top: 1px;
+    background-color: rgb(109, 109, 109);
 }
 .border_block{
 	outline: 2px solid rgb(93, 119, 168);
