@@ -5,19 +5,119 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@500&family=Roboto:wght@500;700;900&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
-    <div class="center">
     <!-- button -->
-    <form action="index.html">
-        <span class="line_button"><form action="index.html"><button class="button_swap"><b class="html_logo"></b>index.html<img src="img/html.png" class="img-style" alt="error"></button></form><form action="doccss.html"><button class="button_swap"><b class="css_logo"></b>style.css<img src="img/CSS3_logo.svg.png" class="img-style" alt="error"></button></form></span>
-    </form>
+    <header>
+        <span class="line_button"><form action="main.html"><button class="button_swap"><b>Головна</b></button></form><form action="index.html"><button class="button_swap"><b class="html_logo">&lt;&gt;</b>index.html<img src="img/html.png" class="img-style" alt="Eror"></button></form><form action="doccss.html"><button class="button_swap"><b class="css_logo">#</b>style.css<img src="img/CSS3_logo.svg.png" class="img-style" alt="Error"></button></form><form action="docjs.html"><button class="button_swap"><b class="js-logo">JS</b>script.js<img src="img/Javascript-logo.png" class="img-style" alt="Error"></button></form></span>
+    </header>
     <br>
+    <!-- Параметри -->
+    <details class="space1">
+        <summary>
+            <span class="light_green outline_details">Одиниці виміру довжини чи відстані.</span>
+        </summary>
+        <details>
+            <summary>
+                <span class="light_green outline_details">Відносні величини</span>
+            </summary>
+            <br><br>
+            <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
+            <br>
+        </details>
+        <!-- Абсолютні величини -->
+        <details>
+            <summary>
+                <span class="light_green outline_details">Абсолютні величини</span>
+            </summary>
+            <br><br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
+            <br>
+        </details>
+        <!-- Одиниці виміру кутів -->
+        <details>
+            <summary>
+                <span class="light_green outline_details">Одиниці виміру кутів</span>
+            </summary>
+            <br><br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
+            <br>
+            <img src="img/angles.png" class="space1 angles_img" alt="Error">
+            <br><br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
+            <br>
+        </details>
+        <!-- Одиниця виміру часу -->
+        <details>
+            <summary>
+                <span class="light_green outline_details">Одиниця виміру часу</span>
+            </summary>
+            <br><br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
+        </details>
+        <!-- Одиниці, звязвні з розміром екрану -->
+        <details> 
+            <summary>
+                <span class="light_green outline_details">Одиниці, звязані з розміром екрану</span>
+            </summary>
+            <br><br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
+            <br>
+            <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
+        </details>
+    </details>
     <!-- * -->
     <details class="space1">
         <summary class="outline_details">
-            <strong><span class="codestyle">*</span><span class="yelow">{</span></strong>
+            <span class="codestyle">*</span><span class="yelow">{</span>
         </summary>
         <br><br>
         <p class="textstyle border_text">Використовується для всіх елементів</p>
@@ -26,127 +126,132 @@
     <!-- background-color -->
     <details class="space2">
         <summary class="outline_details">
-            <strong><span class="blu">background-color</span>: <span class="orange">#0000</span>;</strong>
+            <span class="blu">background-color</span>: <span class="orange">#0000</span>;
         </summary>
         <br><br>
         <p class="textstyle"><span class="border_text">Задає коляр для задньго фону</span></p>
         <br>
     </details>
-    <!-- font-size -->
+    <!-- background-image --->
     <details class="space2">
         <summary class="outline_details">
-                <strong><span class="blu">font-size</span>:<span class="pxgreen">17px</span>;</strong>
+            <span class="blu">background-image<span class="white">:</span> <span class="url_style">url</span><span class="purple">(</span><span class="orange">"../img/image.png"</span><span class="purple">)</span><span class="white">;</span></span>
+        </summary>
+        <br><br>
+        <p class="textstyle"><span class="border_text">Робить картинку фоном.</span></p>
+        <br>
+    </details>
+    <!-- background-repeat -->
+    <details class="space2">
+        <summary class="outline_details">
+            <p class="textstyle"><span class="blu">background-repeat</span>: <span class="orange">repeat</span>;</p>
         </summary>
         <div class="border_block">
         <br>
-        <p class="textstyle"><span class="border_text">Задає розмір для текста</span></p>
+        <p class="textstyle"><span class="border_text"><span class="text_back">background-repeat</span> Управляє повторенням фону</span></p>
         <br>
-        <!-- Одиниці виміру font-size -->
-            <details>
-                <summary>
-                    <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
+        <p class="textstyle"><span class="blu">background</span>: <span class="url_style">url</span><span class="purple">(<span class="orange">"../img/image.png"</span>)</span> <span class="orange">no-repeat</span>;</p>
+        <br>
+        <details class="space1">
+            <summary class="outline_details">
+                <span class="light_green">Параметри</span>
+            </summary>
+            <div class="space1">
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">repeat</span>Повторює картинку фона.</span></p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">no-repeat</span>Не повторює картинку фона.</span></p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">repeat-x</span>Повторює тільки по горизонталі</span></p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">repeat-y</span>Повторює тільки по вертикалі</span></p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">space</span>Зображення повторюється стільки разів, щоб повністю заповнити область; якщо це не вдається, між картинками додається порожній простір.</span></p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">round</span>Зображення повторюється так, щоб в області вмістилося ціле число малюнків; якщо це не вдається зробити, фонові малюнки масштабуються.</span></p>
+            </div>
+        </details>
+        <br>
+        </div>
+    </details>
+    <!-- background-position -->
+    <details class="space2">
+        <summary class="outline_details">
+            <p class="textstyle"><span class="blu">background-position</span>: <span class="pxgreen">100% 100%</span>;</p>
+        </summary>
+        <div class="border_block">
+        <br>
+        <p class="textstyle">За допомогою <span class="text_back">background-position</span> можна управляти положенням фона.</p>
+        <br>
+        <p class="textstyle"><span class="blu">background</span>: <span class="url_style">url</span><span class="purple">(<span class="orange">"../img/image.png"</span>)</span> <span class="pxgreen">10px 50%</span> <span class="orange">no-repeat</span>;</p>
+        <br>
+        </div>
+    </details>
+    <!-- background-attachment -->
+    <details class="space2">
+        <summary class="outline_details">
+            <p class="textstyle"><span class="blu">background-attachment</span>: <span class="orange">scroll;</span></p>
+        </summary>
+        <div class="border_block">
+            <br>
+            <p class="textstyle"><span class="text_back">background-attachment</span> Встановлює, чи прокручуватиметься фонове зображення разом із вмістом елемента.</p>
+            <br>
+            <p class="textstyle"><span class="blu">background</span>: <span class="url_style">url</span><span class="purple">(<span class="orange">"../img/image.png"</span>)</span> <span class="pxgreen">10px 50%</span> <span class="orange">no-repeat</span> <span class="orange">scroll</span>;</p>
+            <br>
+            <details class="space1">
+                <summary class="outline_details">
+                    <p class="textstyle"><span class="light_green">Параметри</span></p>
                 </summary>
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                    <br>
-                </details>
-                <!-- Абсолютні величини -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                    <br>
-                </details>
-                <!-- Одиниці виміру кутів -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                    <br>
-                    <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                    <br>
-                </details>
-                <!-- Одиниця виміру часу -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                </details>
-                <!-- Одиниці, звязвні з розміром екрану -->
-                <details> 
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                </details>
-                <!---->
+                <br><br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">scroll</span> Дозволяє переміщатися фону разом із вікном браузера</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">fixed</span> Робить фонове зображення елемента нерухомим, а також встановлює фонове зображення щодо вікна браузера .</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">Local</span> Фон фіксується з урахуванням поведінки елемента. Якщо елемент має прокручування, то фон прокручуватиметься разом із вмістом, але фон, що виходить за рамки елемента, залишається на місці.</span></p>
             </details>
             <br>
         </div>
     </details>
+    <!-- background-size  -->
+    <details class="space2">
+        <summary class="outline_details">
+            <p class="textstyle"><span class="blu">background-size</span>: <span class="pxgreen">100% 100%</span>;</p>
+        </summary>
+        <div class="border_block">
+            <br>
+            <p class="textstyle"><span class="border_text">Задає розмір картинки</span></p>
+            <br>
+            <p class="textstyle"><span class="blu">backgroung-size</span>: <span class="url_style">url</span><span class="purple">(<span class="orange">"../img/image.png"</span>)</span><span class="pxgreen">0 0</span>/<span class="orange">auto auto no-repeat</span>;</p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back"></span>contain</span>Масштабує зображення зі збереженням пропорцій таким чином, щоб картинка повністю помістилася всередину блоку. Тобто по меншій стороні картинки.</p>
+            <br>
+            <p class="textstyle"><span class="border_text"><span class="text_back">cover</span>Масштабує зображення зі збереженням пропорцій так, щоб його ширина або висота дорівнювала ширині або висоті блоку. Тобто з більшого боку картинки</span></p>
+            <br>
+        </div>
+    </details>
+    <!--background -->
+    <details class="space2">
+        <summary class="outline_details">
+            <p class="textstyle"><span class="blu">backgroung</span>: <span class="url_style">url</span><span class="purple">(<span class="orange">"../img/image.png"</span>)</span><span class="pxgreen">0 0</span>/<span class="orange">auto auto no-repeat</span>;</p>
+        </summary>
+        <div class="border_block">
+            <br>
+            <p class="textstyle"><span class="text_back"></span><span class="border_text">Задає коляр для задньго фону</span></p>
+        </div>
+    </details>
+    <!-- font-size -->
+    <details class="space2">
+        <summary class="outline_details">
+                <span class="blu">font-size</span>:<span class="pxgreen">17px</span>;
+        </summary>
+        <br><br>
+        <p class="textstyle"><span class="border_text">Задає розмір для текста</span></p>
+        <br>
+    </details>
     <!-- font-family -->
     <details class="space2">
         <summary class="outline_details">
-            <strong><span class="blu">font-family</span>: <span class="orange">"Courier New"</span>,<span class="orange">Courier</span>,<span class="orange">monospace</span>;</strong>
+            <span class="blu">font-family</span>: <span class="orange">"Courier New"</span>,<span class="orange">Courier</span>,<span class="orange">monospace</span>;
         </summary>
         <br><br>
         <p class="textstyle"><span class="border_text">Задає шрифт</span></p>
@@ -155,7 +260,7 @@
     <!-- font-weight -->
     <details class="space2">
         <summary class="outline_details">
-            <strong><p class="textstyle"><span class="blu">font-weight</span>: <span class="orange">bold</span>;</p></strong>
+            <p class="textstyle"><span class="blu">font-weight</span>: <span class="orange">bold</span>;</p>
         </summary>
         <div class="border_block">
         <br>
@@ -163,7 +268,7 @@
         <br>
         <details class="space1">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="light_green">Параметри</span></p></strong>
+                <p class="textstyle"><span class="light_green">Параметри</span></p>
             </summary>
             <br><br>
             <p class="textstyle"><span class="border_text"><span class="text_back">normal</span> стандартна товщина шрифта. Відповідає значенню 400. Значення по замовчуванню.</span></p>
@@ -191,16 +296,16 @@
     <!-- block(strong) -->
     <details class="space1">
         <summary class="outline_details">
-            <strong><span class="yelow">strong{</span></strong>
+            <span class="yelow">strong{</span>
         </summary>
         <br><br>
-        <p class="textstyle"><span class="border_text">Задає параметри для всіх елементів <strong>&lt;<span class="codestyle">strong</span>&gt;</strong></span></p>
+        <p class="textstyle"><span class="border_text">Задає параметри для всіх елементів &lt;<span class="codestyle">strong</span>&gt;</span></p>
         <br>
     </details>
     <!-- color -->
     <details class="space2">
         <summary class="outline_details">
-            <strong><span class="blu">color</span>: <span class="orange">#808080</span>;</strong>
+            <span class="blu">color</span>: <span class="orange">#808080</span>;
         </summary>
         <br><br>
         <p class="textstyle"><span class="border_text">Задає коляр елементу</span></p>
@@ -209,7 +314,7 @@
     <!-- text-align -->
     <details class="space2">
         <summary class="outline_details">
-            <strong><span class="blu">text-align</span>: <span class="orange">left</span>;</strong>
+            <span class="blu">text-align</span>: <span class="orange">left</span>;
         </summary>
         <div class="border_block">
         <br>
@@ -238,15 +343,15 @@
     <!-- text-transform -->
     <details class="space2">
         <summary class="outline_details">
-            <strong><p class="textstyle"><span class="blu">text-transform</span>: <span class="orange">uppercase</span>;</p></strong>
+            <p class="textstyle"><span class="blu">text-transform</span>: <span class="orange">uppercase</span>;</p>
         </summary>
         <div class="border_block">
         <br>
         <p class="textstyle"><span class="border_text">Додає параметри до тексту (по типу всі велики букви)</span></p>
         <br>
-        <details>
-            <summary class="outline_details space1">
-                <b><p class="textstyle light_green">параметри</span></span></p></b>
+        <details class="space1">
+            <summary class="outline_details">
+                <b><p class="light_green">Параметри</p></b>
             </summary>
             <div class="space1">
                 <br>
@@ -266,224 +371,52 @@
         <br>
     </div>
     </details>
-    <!-- text-shadow -->
+        <!-- text-shadow -->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">text-shadow</span>: <span class="pxgreen">5px 5px <span class="orange">#808080</span></span>;</p></strong>
+                <p class="textstyle"><span class="blu">text-shadow</span>: <span class="pxgreen">5px 5px <span class="orange">#808080</span></span>;</p>
             </summary>
             <div class="border_block">
             <br>
             <p class="textstyle"><span class="border_text"><span class="text_back">text-shadow</span> додає тінь до текста </span></p>
             <br>
-            <!-- Одиниці виміру text-shadow -->
-            <details>
-                <summary>
-                    <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                </summary>
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                    <br>
-                </details>
-                <!-- Абсолютні величини -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                    <br>
-                </details>
-                <!-- Одиниці виміру кутів -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                    <br>
-                    <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                    <br>
-                </details>
-                <!-- Одиниця виміру часу -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                </details>
-                <!-- Одиниці, звязвні з розміром екрану -->
-                <details> 
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                </details>
-                <!---->
             </div>
+            <br>
+        </details>
+        <!-- text-decoration -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="blu">text-decoration</span>: <span class="orange">underline</span>;</p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">text-decoration</span> дозволяє добавити декоративні лінії для тексту.</span></p>
+                <br>
+            <details class="space1">
+                <summary class="outline_details">
+                    <p class="textstyle"><span class="pxgreen">Параметри</span></p>
+                </summary>
+                <br><br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">none</span> Нічого не міняє.</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">underline</span> Підкреслює знизу.</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">line-through</span> Закреслює текст.</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">overline</span> Лінія над текстом.</span></p>
             </details>
+            <br>
+            </div>
         </details>
         <!-- box-shadow -->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">box-shadow</span>: <span class="light_green">-15px 15xp 0 0 <span class="orange">#0000</span></span>;</p></strong>
+                <p class="textstyle"><span class="blu">box-shadow</span>: <span class="light_green">-15px 15xp 0 0 <span class="orange">#0000</span></span>;</p>
             </summary>
             <div class="border_block">
                 <br>
                 <p class="textstyle"><span class="border_text">Додає тінь на блок</span></p>
                 <br>
-                <!-- Одиниці виміру box-shadow -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
-                </details>
             </div>
         </details>
         <!-- end block-->
@@ -498,7 +431,7 @@
         <!-- start block block-center-->
         <details class="space1">
             <summary class="outline_details">
-                <strong><p class="yelow">.conteiner</p></strong>
+                <p class="yelow">.conteiner</p>
             </summary>
             <br><br>
             <p class="textstyle"><span class="border_text"> Задає параметри до блока з <b><span class="blu">class</span>=<span class="orange">"conteiner"</span></b>. <br> Точка означає що треба вказувати класс до елемента щоб від застосувався.</span></p>
@@ -507,7 +440,7 @@
         <!-- display-->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">display</span>: <span class="orange">flex</span>;</p></strong>
+                <p class="textstyle"><span class="blu">display</span>: <span class="orange">flex</span>;</p>
             </summary>
             <div class="border_block">
             <br>
@@ -515,7 +448,7 @@
             <br>
             <details class="space1">
                 <summary class="outline_details">
-                    <strong><p class="light_green">параметри display</p></strong>
+                    <p class="light_green">параметри display</p>
                 </summary>
                 <br><br>
                 <p class="textstyle"><span class="border_text"><span class="text_back">none</span> повністю скриває елемент</span></p>
@@ -535,782 +468,236 @@
         <!-- width -->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">width</span>: <span class="light_green">20px</span>;</p></strong>
+                <p class="textstyle"><span class="blu">width</span>: <span class="light_green">20px</span>;</p>
             </summary>
             <div class="border_block">
                 <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back">width</span> відповідає за ширину елемена.</span></p>
+                <p class="textstyle"><span class="border_text"><span class="text_back blu">width</span> відповідає за ширину елемента.</span></p>
                 <br>
-                <!-- Одиниці виміру width -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
+                <p class="textstyle"><span class="border_text"><span class="text_back blu">max-width</span> відповідає за максимальну ширину елемета.</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back blu">min-width</span> відповідає за мінімальну ширину елемента</span></p>
+                <br>
                 </details>
-            </div>
         </details>
         <!-- height -->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">height</span>: <span class="light_green">20px</span>;</p></strong>
+                <p class="textstyle"><span class="blu">height</span>: <span class="light_green">20px</span>;</p>
             </summary>
             <div class="border_block">
                 <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back">height</span> відповідає за висоту елемента.</span></p>
+                <p class="textstyle"><span class="border_text"><span class="text_back blu">height</span> відповідає за висоту елемента.</span></p>
                 <br>
-                <!-- Одиниці виміру height -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
-                </details>
-            </div>
-        </details>
-        <!-- max-width -->
-        <details class="space2">
-            <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">max-width</span>: <span class="light_green">1200px</span>;</p></strong>
-            </summary>
-                <div class="border_block">
+                <p class="textstyle"><span class="border_text"><span class="text_back blu">max-height</span> відповідає за максимальну висоту елемета.</span></p>
                 <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back">max-width</span> відповідає за максимальну ширину елеменат.</span></p>
+                <p class="textstyle"><span class="border_text"><span class="text_back blu">min-height</span> відповідає за мінімальну висоту елемента.</span></p>
                 <br>
-                <!-- Одиниці виміру max-width -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
-                </details>
-            </div>
-        </details>
-        <!-- min-width -->
-        <details class="space2">
-            <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">min-width</span>: <span class="light_green">300px</span>;</p></strong>
-            </summary>
-            <div class="border_block">
-                <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back">min-width</span> відповідає за мінімальну ширину елемента.</span></p>
-                <br>
-                <!-- Одиниці виміру min-width-->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
-                </details>
-            </div>
-        </details>
-        <!-- max-height -->
-        <details class="space2">
-            <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">max-height</span>: <span class="light_green">2000px</span>;</p></strong>
-            </summary>
-            <div class="border_block">
-                <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back">max-height</span> відповідає за максимальну висоту елемента.</span></p>
-                <br>
-                <!-- Одиниці виміру max-height -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
-                </details>
-            </div>
-        </details>
-        <!-- min-height -->
-        <details class="space2">
-            <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">min-height</span>: <span class="light_green">200px</span>;</p></strong>
-            </summary>
-            <div class="border_block">
-                <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back">min-height</span> відповідає за мінімальну висоту елемента.</span></p>
-                <br>
-                <!-- Одиниці виміру min-height -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                    </summary>
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Відносні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Абсолютні величини -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниці виміру кутів -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                        <br>
-                        <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                        <br>
-                    </details>
-                    <!-- Одиниця виміру часу -->
-                    <details>
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                    </details>
-                    <!-- Одиниці, звязвні з розміром екрану -->
-                    <details> 
-                        <summary>
-                            <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                        </summary>
-                        <br><br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                        <br>
-                        <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                    </details>
-                    <!---->
-                </details>
             </div>
         </details>
         <!-- margin -->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu">margin</span>: <span class="light_green"></span>;</p></strong>
+                <p class="textstyle"><span class="blu">margin</span>: <span class="light_green">1px 2px 3px 4px</span>;</p>
             </summary>
             <div class="border_block">
                 <br>
-                <p class="textstyle"><span class="border_text"><span class="text_back"></span></span></p>
+                <p class="textstyle"><span class="border_text"><span class="text_back">margin</span> задає розмір зовнішнього відступу навколо елемента. <br><span class="text_back">1px відступ зверху</span><span class="text_back">2px відступ з права</span><span class="text_back">3px відступ знизу</span><span class="text_back">4px відступ зліва</span></span></p>
                 <br>
-                <!-- Відносні величини margin -->
-                <details>
-                <summary>
-                    <strong><span class="light_green outline_details">Одиниці виміру довжини чи відстані</span></strong>
-                </summary>
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Відносні величини</span></strong>
+                <p class="textstyle"><span class="border_text"><span class="text_back">margin-left</span> відступ з ліва</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">margin-right</span> відступ з права</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">margin-top</span> відступ з верху</span></p>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">margin-bottom</span> відступ з низу</span></p>
+                <br>
+            </div>
+        </details>
+        <!-- padding -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="blu">padding</span>: <span class="light_green">5px 10px 15px 20px</span>;</p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">padding</span> відповідає за внутрішній відступ <br><span class="text_back">5px відступ зверху</span><span class="text_back">10px відступ зправа</span><span class="text_back">15px відступ знизу</span><span class="text_back">20px відступ зправа</span></span></p>
+                <br>
+            </div>
+        </details>
+        <!-- border -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="blu">border</span>: <span class="light_green">5px</span> <span class="orange">solid #0000</span>;</p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">border</span> малює видимі границі блока (рамку).</span></p>
+                <br>
+                <details class="space1">
+                    <summary class="outline_details">
+                        <b><p class="light_green">Параметри</p></b>
                     </summary>
                     <br><br>
-                    <p class="textstyle"><span class="border_text"> Використовуються для завдання розміру чи відстані щодо чогось. Наприклад,<span class="text_back">vh</span> вважається щодо висоти вьюпорта (області перегляду сторінки у вікні браузера).</span></p></li>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-width</span> Управляє товщиною рамки.</span></p>
                     <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">em</span> задає величину відносно вичисленого розміру елемента шрифту. Якщо для елемента <span class="text_back">font-size: 20px</span> то <span class="text_back">2em</span> будуть рівними <span class="text_back">40px</span> При заданні розміру шрифту в <span class="text_back">em</span> він вважається відносно розміру шрифту батьківського блоку.</p></span>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-style</span> Управляє стилем рамки.</span></p>
                     <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rem</span> розраховує відносно розмміру шрифта корньового елемента. Для веб-сторінки це <span class="text_back">&lt;html&gt;</span>. За умовчуванням розміру шрифта для <span class="text_back">&lt;html&gt;</span> рівний <span class="text_back">16px</span>. При таких умовах <span class="text_back">2rem</span> еквівалентне <span class="text_back">32px</span>.</p></span>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-color</span> Управляє кольором рамки.</span></p>
                     <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vh</span> задає розмір в процентах від висоти в'юпорта. <span class="text_back">1vh</span> складає 1% від висоти. </span></p>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-top</span> Робить рамку тільки зверху.</span></p>
                     <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vw</span> задає розмір у відсотках від ширини в'юпорт. <span class="text_back">1vw</span> складає 1% від ширини.</span></p>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-right</span> Робить рамку тільки зправа.</span></p>
                     <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vmin</span> рахує відносно меншої сторони в'юпорта. Якщо ширина в'юпорта більше висоти, від <span class="text_back">vmin</span> будерахуватися відносно висоти. І наоборот. <span class="text_back">1vmin</span> складає 1% від меньшої сторони в'юполя. </span></p>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-bottom</span> Робить рамку тільки з низу.</span></p>
                     <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">vmax</span> вважається відносно більшої сторони в'юпорту. <span class="text_back">1vmax</span> складає 1% від більшої сторони.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ex</span> задає величину відносну метрики шрифта <span class="text_back">x-height</span>. Так назвається відстань між базовою линією шрифта і середньою лінією строчних букв. Зазвичай це висота букви <span class="text_back">X</span> в шрифті, звітси і назва <span class="text_back">x-height</span>. Цю екзотичну величину можна використовувати, наприклад, пр стилизації верхніх або нижніх індексів.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">cap</span> рахує відносно висоти великих букв шрифта.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ch</span> задає виличину відносну ширини символа 0 в шрифті.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ic</span> задає розмір відносно ієрогліфа 水 (вода)</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">lh</span> задає розмір відносно міжрядкового інтервала. Це прописано в властивості <span class="text_back">line-height: 16px</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rlh</span> те ж, що і <span class="text_back">lh</span> но відносно <span class="text_back">line-height</span> елемента <span class="text_back">&lt;html&gt;</span></span></p>
-                    <br>
+                    <p class="textstyle"><span class="border_text"><span class="text_back">border-left</span> Робить рамку тільки з ліва.</span></p>
                 </details>
-                <!-- Абсолютні величини -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Абсолютні величини</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">px</span> відповідає одному пікселю на екрані. <span class="text_back">1px</span> інтерпретується як 1/96 дуйма.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">cm</span> сантиметри. <span class="text_back">1cm</span>=<span class="text_back">96px / 2.54</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">in</span> дуйми. <span class="text_back">1in</span>=<span class="text_back">96</span>=<span class="text_back">2.54cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">mm</span> міліметри. <span class="text_back">1mm</span>=<span class="text_back">1/10cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">Q</span> чверть міліметра. <span class="text_back">1Q</span>=<span class="text_back">1/40cm</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">pc</span> піки. <span class="text_back">1pc</span>=<span class="text_back">1/16in</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">pt</span> пункти. <span class="text_back">1pt</span>=<span class="text_back">1/72in</span></span></p>
-                    <br>
-                </details>
-                <!-- Одиниці виміру кутів -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці виміру кутів</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">deg</span> градуси кута. Повне коло має 360 градусів. В тригонометрії 0° відповідає перетину кола з віссю x, и градуси відраховуються проти часової стрілки. В CSS <span class="text_back">0deg</span> відповідає преетину кола з віссю y, а гардуси відраховуються по годиній стрілці.</span></p>
-                    <br>
-                    <img src="img/angles.png" class="space1 angles_img" alt="Error">
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">grad</span> градіни. 1/100 от прямого угла (0.9°). Повне коло містить 400 градіан. Це одиниця виміру трохи зручніше градусів в плані приктичних розрахунків. </span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">rad</span> радіани. Повне коло містить 2π (~6.2832) радіан.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">turn</span> оборот. Повне коло відповідає одному обороту (<span class="text_back">1turn</span>). Поворот елемента на 90 градусів відповідає <span class="text_back">0.25turn</span>.</span></p>
-                    <br>
-                </details>
-                <!-- Одиниця виміру часу -->
-                <details>
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниця виміру часу</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">ms</span> мілісикунда</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">s</span> секунда. <span class="text_back">1s</span>=<span class="text_back">1000m</span></span></p>
-                </details>
-                <!-- Одиниці, звязвні з розміром екрану -->
-                <details> 
-                    <summary>
-                        <strong><span class="light_green outline_details">Одиниці, звязані з розміром екрану</span></strong>
-                    </summary>
-                    <br><br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dpi</span> укразує плотність пікселів в точках на дюйм.</span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dpcm</span> плотність пикселів в точках на сантиметр. <span class="text_back">1dpcm</span>=<span class="text_back">2.54dpi</span></span></p>
-                    <br>
-                    <p class="textstyle space1"><span class="border_text"><span class="text_back">dppx</span><span class="text_back">x</span>описує плотність в точках на <span class="text_back">px</span>. Поскільки відношення <span class="text_back">in</span>і <span class="text_back">px</span> рівно 1/96, <span class="text_back">1dppx</span>=<span class="text_back">96dpi</span></span></p>
-                </details>
-                <!---->
-            </details>
+                <br>
+            </div>
+        </details>
+        <!-- outline -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="blu">outline</span>: <span class="light_green">2px</span> <span class="orange">solid #0000</span>;</p>
+            </summary>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">outline</span> тоже саме що і (border) але відмальовує рамку зовні блока.</span></p>
+                <br>
+        </details>
+        <!-- border-radius-->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="blu">border-radius</span>: <span class="light_green">2px</span>;</p>
+            </summary>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">border-radius</span> закругляє кути майже любого лемента (картинки, рамки, блока і т.д)</span></p>
+                <br>
+        </details>
+        <!-- opasity -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="blu">opasity</span>: <span class="light_green">50%</span>;</p>
+            </summary>
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back">opasity</span> Задає параметри прозорості елемента.</span></p>
+                <br>
+        </details>
+        <!-- end block conteiner-->
+        <details class="space1">
+            <summary class="outline_details">
+                <b><p class="yelow">}</p></b>
+            </summary>
+            <br><br>
+                <p class="textstyle"><span class="border_text">Кінець блока</span></p>
+            <br>
+        </details>
+        <!-- start block(pseudo-classes) -->
+        <details class="space1">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">.pseudo-classes</span></p>
+            </summary>
+            <br><br>
+            <p class="textstyle"><span class="border_text">Псевдокласи – особливий вид селектора, який уточнює тип чи стан. Зазвичай це якась якісна ознака: реакція на наведення курсору, порядок прямування та інші.</span></p>
+            <br>
+        </details>
+        <!-- :hover -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:hover</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text"> Міняє параметри при наведенні курсора</span></p>
+                <br>
+                <span class="yelow">.frame:hover{</span>
+                    <br><span class="textstyle space1"><span class="blu">outline</span>: <span class="light_green">2px</span> <span class="orange">solid #313131</span>;</span><br>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- :visited -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:visited</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Додає силкам по яким вже переходили</span></p>
+                <br>
+                <span class="yelow">.frame:visuted{</span>
+                    <p><span class="textstyle space1"><span class="blu">color</span>: <span class="orange">#343434</span>;</span></p>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- :active -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:active</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Спрацьовує при взяємодії з ним.</span></p>
+                <br>
+                <span class="yelow">.frame:active{</span>
+                    <p><span class="textstyle space1"><span class="blu">color</span>: <span class="orange">white</span>;</span></p>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- end block(pseudo-classes)-->
+        <details class="space1">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">}</span></p>
+            </summary>
+            <p class="textstyle"><span class="border_text">Кінець блока</span></p>
+        </details>
+        <!-- start (pseudo elements)-->
+        <details class="space1">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">.pseudo-elements</span></p>
+            </summary>
+            <br><br>
+            <p class="textstyle"><span class="border_text">Псевдоелементи — це елементи, яких немає у HTML-розмітці. <br> Вони створюються та позиціонуються виключно за допомогою CSS. Найчастіше використовуються для створення різних декоративних елементів (які не мають змістовного сенсу). <br> Також псевдоелементи приходять на допомогу, коли потрібно накласти поверх картинки так званий оверлей (шар, що перекриває). На цьому користь псевдоелементів не закінчується.</span></p>
+            <br>
+        </details>
+        <!-- ::before -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">::before</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Коли ми в CSS добавляєм <span class="text_back">::before</span> до селектора, для відповідного елемента створюється псевдоелемент. Цей псевдоелемент - його перший нащадок, він йде до внутрішнього вмісту.</span></p>
+                <br>
+                <span class="yelow">a::before{</span>
+                    <br><span class="blu space1">content<span class="textstyle">:</span> <span class="orange">"♥"</span></span><span class="textstyle">;</span><br>
+                <span class="yelow">}</span>
+                <br><br>
+            </div>
+        </details>
+        <!-- ::after-->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">::after</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle">Коли ми в CSS добавляєм <span class="text_back">::after</span> до  селектора, для відповідного елемента створюється псевдоелемент. Цей псевдоелемент - його останній, він йде після всього внутрішнього вмісту.</p>
+                <br>
+                <span class="yelow">a::after{</span>
+                    <br><span class="blu space1">content<span class="textstyle">:</span> <span class="orange">"→"</span><span class="textstyle">;</span></span><br>
+                <span class="yelow">}</span>
             </div>
         </details>
         <!-- template (шаблон) -->
         <details class="space2">
             <summary class="outline_details">
-                <strong><p class="textstyle"><span class="blu"></span>: <span class="light_green"></span>;</p></strong>
+                <p class="textstyle"><span class="blu"></span>: <span class="light_green"></span>;</p>
             </summary>
-            <br><br>
-            <p class="textstyle"><span class="border_text"><span class="text_back"></span></span></p>
-            <br>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text"><span class="text_back"></span></span></p>
+                <br>
+            </div>
         </details>
-    </div>
 </body>
 </html>

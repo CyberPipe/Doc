@@ -32,12 +32,18 @@ img{vertical-align: top;}
 h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight: 400;}
 /*--------------------*/
 *{
-	background-color: #000000;
 	font-size: 17px;
-	font-family: "Courier New", Courier, monospace;
+	font-family: Consolas, 'Courier New', monospace;
+}
+.block-space{
+	margin-top: 78px;
+}
+body{
+	background-color: #000000;
 }
 details summary{
 	list-style: none;
+	background-color: transparent;
 }
 .center{
 	margin: auto;
@@ -48,22 +54,29 @@ details summary{
 .codestyle{
 	color: rgb(93, 148, 219);
 }
-strong{
+span{
 	color: #b4b4b4;
 }
 .h1style{
 	color: Orange;
 	text-align: center;
 	font-size: 30px;
+	background-position: 100%;
 }
 .light_green{
 	color:#94e092;
+}
+.url_style{
+	color:rgb(180, 180, 80);
+}
+.purple{
+	color: rgb(172, 0, 172);
 }
 .orange{
 	color: #b97652;
 }
 .white{
-	color: grey;
+	color: rgb(206, 206, 206);
 }
 .blu{
 	font-size: 16px;
@@ -105,6 +118,7 @@ strong{
 .img-style{
 	width: 20px;
 	height: 19px;
+	background-color: transparent;
 }
 .dblock{
 	width: 95%;
@@ -129,15 +143,16 @@ details[open] {
 .button_swap{
 	color: rgb(255, 208, 0);
 	background-color: #313131;
+	width: auto;
+	height: 100%;
 	padding: 3px;
 	border: 1px solid gray;
-	margin-bottom: 1px;
 }
 .button_swap:hover{
 	background-color: #000000;
 }
 .line_button{
-	display: flex;
+	display: inline-flex;
 	margin-left: 50px;
 }
 .pxgreen{
@@ -161,14 +176,24 @@ summary{
 	outline: 1px solid rgb(88, 111, 155);
 	display: inline;
 	border-radius: 4px;
+	background: transparent;
 }
-.html_logo::after{
+.html_logo{
 	content: "<>";
 	color: orange;
+	background-color: transparent;
+	font-family: 'Courier New', Courier, monospace	;
+	margin-right: 5px;
 }
-.css_logo::after{
-	content: "#";
-	color: rgb(33, 185, 231);	
+.css_logo{
+	font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	color: rgb(33, 185, 231);
+	background-color: transparent;
+	margin-right: 5px;
+}
+.js-logo{
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	margin-right: 5px;
 }
 .text_back{
 	padding: 0.025em 0.35em;
@@ -186,10 +211,23 @@ summary{
 	width: 970;
 	height: 538;
 }
+/* main */
+.link_program{
+	color: rgb(1, 198, 224);
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .3s;
+}
+.link_program:hover{
+	background-size: 100% 2px;
+}
+
 @keyframes slide {
 	0%    { opacity: 0; transform:  translate(0, -10px); }
 	100%  { opacity: 1; transform:  translate(0, 0); }
 }
-
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;700&family=Open+Sans:wght@300;400;500;600;700;800&family=Roboto+Mono:wght@300;400;500;600;700&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
 
