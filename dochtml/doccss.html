@@ -13,7 +13,7 @@
 <body>
     <!-- button -->
     <header>
-        <span class="line_button"><form action="main.html"><button class="button_swap"><b>Головна</b></button></form><form action="index.html"><button class="button_swap"><b class="html_logo">&lt;&gt;</b>index.html<img src="img/html.png" class="img-style" alt="Eror"></button></form><form action="doccss.html"><button class="button_swap"><b class="css_logo">#</b>style.css<img src="img/CSS3_logo.svg.png" class="img-style" alt="Error"></button></form><form action="docjs.html"><button class="button_swap"><b class="js-logo">JS</b>script.js<img src="img/Javascript-logo.png" class="img-style" alt="Error"></button></form></span>
+        <span class="line_button"><form action="main.html"><button class="button_swap"><b>Головна</b></button></form><form action="index.html"><button class="button_swap"><b class="html_logo">&lt;&gt;</b>index.html<img src="img/html.png" class="img-style" alt="Eror"></button></form><form action="doccss.html"><button class="button_swap button_active"><b class="css_logo">#</b>style.css<img src="img/CSS3_logo.svg.png" class="img-style" alt="Error"></button></form><form action="docjs.html"><button class="button_swap"><b class="js-logo">JS</b>script.js<img src="img/Javascript-logo.png" class="img-style" alt="Error"></button></form><form action="practic.html"><button class="button_swap"><b>Практика</b></button></form></span>
     </header>
     <br>
     <!-- Параметри -->
@@ -595,7 +595,7 @@
         <!-- start block(pseudo-classes) -->
         <details class="space1">
             <summary class="outline_details">
-                <p class="textstyle"><span class="yelow">.pseudo-classes</span></p>
+                <p class="textstyle"><span class="yelow">.pseudo-classes{</span></p>
             </summary>
             <br><br>
             <p class="textstyle"><span class="border_text">Псевдокласи – особливий вид селектора, який уточнює тип чи стан. Зазвичай це якась якісна ознака: реакція на наведення курсору, порядок прямування та інші.</span></p>
@@ -640,6 +640,76 @@
                 <br>
                 <span class="yelow">.frame:active{</span>
                     <p><span class="textstyle space1"><span class="blu">color</span>: <span class="orange">white</span>;</span></p>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- :focus -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:focus</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Сайтом можна скористатися не тільки з використанням мишки, але й за допомогою клавіатури. При перемиканні кнопкою Tab елементу додається псевдоклас <span class="text_back">:focus</span>, і ми можемо задати йому красиві стилі.</span></p>
+                <br>
+                <span class="yelow">.frame{</span>
+                    <p><span class="textstyle space1"><span class="blu">box-shadow</span>: <span class="pxgreen">0 0 10px</span> <span class="orange">rgba(0,0,0,0.8)</span>;</span></p>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- :first-child -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:first-child</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Застосовується для першого елемента.</span></p>
+                <br>
+                <span class="yelow">.frame:first-child{</span>
+                <p><span class="textstyle space1"><span class="blu">color</span>: <span class="orange">green</span></span></p>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- :nth-child(1) -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:nth-child(3)</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Застосовується для конкретного елемента.</span></p>
+                <br>
+                <details class="space1">
+                    <summary class="outline_details">
+                        <p class="textstyle"><span class="light_green">Параметри</span></p>
+                    </summary>
+                    <div class="border_block">
+                        <br>
+                        <p class="textstyle"><span class="yelow text_back">:nth-child(odd)</span> - Всі не парні</p>
+                        <br>
+                        <p class="textstyle"><span class="yelow text_back">:nth-child(even)</span> - Всі парні</p>
+                        <br>
+                    </div>
+                    <br>
+                </details>
+                <br>
+                <span class="yelow">.frame:nth-child(3){</span>
+                    <p><span class="textstyle space1"><span class="blu">color</span>: <span class="orange">orange</span></span></p>
+                <span class="yelow">}</span>
+            </div>
+        </details>
+        <!-- :last-child -->
+        <details class="space2">
+            <summary class="outline_details">
+                <p class="textstyle"><span class="yelow">:last-child</span></p>
+            </summary>
+            <div class="border_block">
+                <br>
+                <p class="textstyle"><span class="border_text">Застосовується для останьго елемента.</span></p>
+                <br>
+                <span class="yelow">.frame:last-child{</span>
+                    <p><span class="textstyle space1"><span class="blu">color</span>: <span class="orange">red</span></span></p>
                 <span class="yelow">}</span>
             </div>
         </details>

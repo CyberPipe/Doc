@@ -151,6 +151,9 @@ details[open] {
 .button_swap:hover{
 	background-color: #000000;
 }
+.button_active{
+	background-color: #000000;
+}
 .line_button{
 	display: inline-flex;
 	margin-left: 50px;
@@ -223,6 +226,16 @@ summary{
 }
 .link_program:hover{
 	background-size: 100% 2px;
+}
+.list li{
+	font-size: 18px;
+	margin: 0px 0px 15px 0px;
+}
+.list li:first-child{
+	color: green;
+}
+.list li:last-child{
+	color: orange;
 }
 
 @keyframes slide {
